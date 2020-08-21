@@ -10,7 +10,7 @@ export async function up(knex: knex) {
         .notNullable()
         .references('id')
         .inTable('users')
-        .onUpdate('CASCADADE')
+        .onUpdate('CASCADE')
         .onDelete('CASCADE')
     });
 }
