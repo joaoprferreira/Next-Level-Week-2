@@ -17,8 +17,8 @@ routes.post('/classes', async (request, response) => {
       await db('users').insert({
           name,
           avatar,
+          whatsapp,
           bio,
-         whatsapp,
       });
   
 
